@@ -27,11 +27,21 @@ banners     -    try both
 footer      -   grid 
 
 
+*****UPDATES*****
+new grid, better use of grid-areas and less code
+
+
 
 *****NEXT UP*****
 commit
 
 
+
+
+
+
+*****THOUGHTS*****
+should title and subtitles/instrutctions for a form be inside the form-tag or outside? best practice?
 
 
 *****TEXTS*****
