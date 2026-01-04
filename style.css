@@ -240,14 +240,23 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 /*** MY CSS STARTS HERE***/
 
+
+/*GENERAL*/
+
 button {
   padding: 0.3rem 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--clr-green-400);
+  width: fit-content;
+  border: none;
   &:hover {
     background-color: var(--clr-neutral-100);
     color: var(--clr-green-400);
     border: 1px solid var(--clr-green-400);
   }
 }
+
+/****HEADER****/
 
 .page-header {
   width: 100vw;
@@ -256,6 +265,8 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+/*NAVIGATION -- MOBILE*/
 
 .mobile-nav {
   display: none;
@@ -268,6 +279,8 @@ button {
     color: white;
   }
 }
+
+/*NAVIGATION -- DESKTOP/TABLET*/
 
 .main-nav {
   z-index: 1;
@@ -288,6 +301,8 @@ button {
   align-items: center;
   height: 100%;
 }
+
+/***NAVIGATION LINKS***/
 
 .nav__ul {
   display: flex;
@@ -317,6 +332,8 @@ button {
     font-size: var(--fs-300);
   }
 }
+
+/***LOGO + BRAND NAME***/
 
 .nav__brand-group {
   display: flex;
@@ -359,6 +376,9 @@ button {
   line-height: 0.8rem;
   padding: 0.5rem;
 }
+
+
+/*****HEADER INTRO SECTION TEXT + GALLERY*****/
 
 .intro {
   /* margin: 0 8rem; */
@@ -420,9 +440,11 @@ button {
   grid-area: i6;
 }
 
-/*CTA INSIDE HEADER*/
 
-.header__cta {
+
+/*****BANNER WITH CTA V.1*****/
+
+.banner__cta {
   background-color: var(--clr-neutral-100);
   display: flex;
   flex-direction: column;
@@ -430,18 +452,6 @@ button {
   align-items: center;
   width: 100%;
   height: fit-content;
-  padding: 2rem 0;
-
-}
-
-.banner__cta--2 {
-  background-color: var(--clr-neutral-100);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 2rem;
   padding: 2rem 0;
 
 }
@@ -457,50 +467,12 @@ button {
   margin: 2rem 10%;
 }
 
-.cta__content--2 {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
 .cta__text-section {
   width: 50%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   max-width: 45ch;
-}
-
-.cta__text-section--2 {
-  width: 100%;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  max-width: 45ch;
-}
-
-.cta__heading {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.cta__btn {
-  border-radius: 1.5rem;
-  margin-right: 0;
-  background-color: var(--clr-green-400);
-  width: fit-content;
-  border: none;
-}
-.cta__btn--2 {
-  border-radius: 1.5rem;
-  margin-right: 0;
-  background-color: var(--clr-green-400);
-  width: fit-content;
-  text-align: center;
-  border: none;
-  align-self: flex-end;
 }
 
 .cta__form {
@@ -521,6 +493,14 @@ button {
   }
 }
 
+.cta__btn {
+  border-radius: 1.5rem;
+  margin-right: 0;
+  background-color: var(--clr-green-400);
+  width: fit-content;
+  border: none;
+}
+
 .cta__icon-div {
   background-color: var(--clr-green-400);
   border-radius: 50%;
@@ -535,7 +515,55 @@ button {
 
 }
 
-/*LIST GRID WITH CARDS*/
+/*****BANNER WITH CTA V.--2   (reversed order, icon + text + button)*****/
+
+.banner__cta--2 {
+  background-color: var(--clr-neutral-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+
+}
+
+.cta__content--2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.cta__text-section--2 {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 45ch;
+}
+
+.cta__heading {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+
+.cta__btn--2 {
+  border-radius: 1.5rem;
+  margin-right: 0;
+  background-color: var(--clr-green-400);
+  width: fit-content;
+  text-align: center;
+  border: none;
+  align-self: flex-end;
+}
+
+/*********    MAIN CONTENT  **********/
 
 main {
   display: flex;
@@ -548,6 +576,8 @@ main {
 .home-page__h1 {
   margin-top: 4rem;
 }
+
+/*****LIST GRID WITH CARDS*****/
 
 .list-grid {
   display: grid;
@@ -603,6 +633,8 @@ main {
     padding: 0.5rem 0;
   }
 
+  /*AUTHOR SECTION*/
+
   .author {
     display: flex;
     align-items: center;
@@ -644,6 +676,8 @@ main {
   }
 }
 
+/*TAGS SECTION*/
+
 .tag-section {
   display: flex;
   flex-wrap: wrap;
@@ -666,6 +700,9 @@ main {
   font-size: var(--fs-100);
   margin: 0.1rem;
 }
+
+/*TAG COLOR VARIANTS*/
+
 .--flower {
   background-color: var(--clr-flower);
 }
@@ -705,6 +742,8 @@ main {
 .--fast {
   background-color: var(--clr-fast);
 }
+
+/**********  FOOTER  **********/
 
 .page-footer {
   background-color: var(--clr-green-400);
@@ -759,6 +798,13 @@ main {
     }
   }
 }
+
+
+
+/**********     MEDIA QUERIES     **********/
+
+
+/*    - TABLET -    */
 
 @media (max-width: 1024px) {
   .page-header {
@@ -819,6 +865,8 @@ main {
     padding: 1.5rem;
   }
 }
+
+/*    - MOBILE -    */
 
 @media (max-width: 480px) {
   .nav__ul {
