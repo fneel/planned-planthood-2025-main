@@ -240,9 +240,8 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 
 /*** MY CSS STARTS HERE***/
 
-
 button {
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
   &:hover {
     background-color: var(--clr-neutral-100);
     color: var(--clr-green-400);
@@ -261,7 +260,7 @@ button {
 .mobile-nav {
   display: none;
   color: var(--clr-green-400);
-  padding: .4rem;
+  padding: 0.4rem;
   background-color: var(--clr-neutral-100);
 
   &:hover {
@@ -303,25 +302,20 @@ button {
   padding: 0.5rem;
   height: 100%;
 
-    &:hover {
+  &:hover {
     background-color: var(--clr-accent);
-    
+
     .nav-link {
       color: var(--clr-neutral-100);
       text-decoration: none;
     }
   }
 
-
   > a {
     text-transform: uppercase;
     font-weight: var(--fw-500);
     font-size: var(--fs-300);
-
-
   }
-
-
 }
 
 .nav__brand-group {
@@ -330,22 +324,20 @@ button {
   height: 100%;
 
   &:hover {
-      background-color: var(--clr-green-400);
+    background-color: var(--clr-green-400);
 
-      .logo, .brand-name {
+    .logo,
+    .brand-name {
       color: var(--clr-neutral-100);
       stroke: var(--clr-neutral-100);
-
-      }
     }
+  }
 
-  >a {
+  > a {
     display: flex;
     align-items: center;
     height: 100%;
     width: fit-content;
-
-    
   }
 }
 
@@ -365,7 +357,7 @@ button {
   font-size: var(--fs-300);
   color: var(--clr-green-400);
   line-height: 0.8rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .intro {
@@ -378,12 +370,12 @@ button {
   text-align: center;
   background-color: var(--clr-green-100);
   justify-self: center;
+  margin: 1.5rem 0;
 
   > h2,
   p {
     width: 60ch;
     padding: 1rem 0;
-    
   }
 }
 
@@ -428,8 +420,6 @@ button {
   grid-area: i6;
 }
 
-
-
 /*CTA INSIDE HEADER*/
 
 .header__cta {
@@ -440,6 +430,8 @@ button {
   align-items: center;
   width: 100%;
   height: fit-content;
+  padding: 2rem 0;
+
 }
 
 .banner__cta--2 {
@@ -450,10 +442,13 @@ button {
   width: 100%;
   height: fit-content;
   margin-bottom: 2rem;
+  padding: 2rem 0;
+
 }
 
 .cta__content {
   width: 100%;
+  height: 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,7 +474,7 @@ button {
 }
 
 .cta__text-section--2 {
-  width: 50%;
+  width: 100%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -528,18 +523,16 @@ button {
 
 .cta__icon-div {
   background-color: var(--clr-green-400);
-  height: fit-content;
-  max-height: 10rem;
-  max-width: 10rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
-
-  > img {
-    padding: 20%;
+  padding: 2rem;
+  
+  >img {
+    height: 6rem;
   }
+
 }
 
 /*LIST GRID WITH CARDS*/
@@ -562,7 +555,6 @@ main {
   gap: 1rem;
   padding: 1rem;
   margin: 2rem 10%;
-  
 }
 
 .list__card {
@@ -573,7 +565,7 @@ main {
   background-color: var(--clr-neutral-100);
   box-shadow: var(--border-shadow);
 
-  >a {
+  > a {
     height: 100%;
   }
 
@@ -591,21 +583,16 @@ main {
     flex-direction: column;
 
     height: 100%;
-    
-    
-    
-    
 
     > * {
       padding-top: 0.8rem;
     }
-
   }
 
   .card__h2 {
     color: var(--clr-neutral-900);
     font-weight: var(--fw-600);
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     font-size: var(--fs-600);
   }
 
@@ -613,10 +600,7 @@ main {
     color: var(--clr-neutral-900);
     font-size: var(--fs-200);
     height: 6rem;
-    padding: .5rem 0;
-
-
-    
+    padding: 0.5rem 0;
   }
 
   .author {
@@ -627,7 +611,6 @@ main {
     overflow: hidden;
     margin: 1rem 0 0 0;
     bottom: 0;
-    
 
     .avatar-container {
       background-color: var(--clr-accent-light-1);
@@ -648,14 +631,12 @@ main {
       display: flex;
       flex-direction: column;
 
-      
-
-      >h3 {
+      > h3 {
         font-size: var(--fs-200);
         font-weight: var(--fw-600);
       }
 
-      >time {
+      > time {
         color: var(--clr-neutral-400);
         font-size: var(--fs-100);
       }
@@ -667,7 +648,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   min-height: 4rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   justify-self: flex-start;
   align-self: flex-start;
 }
@@ -725,8 +706,6 @@ main {
   background-color: var(--clr-fast);
 }
 
-
-
 .page-footer {
   background-color: var(--clr-green-400);
   color: var(--clr-neutral-100);
@@ -750,8 +729,8 @@ main {
   flex-direction: column;
   max-width: 60ch;
 
-  >* {
-    padding: .5rem 0;
+  > * {
+    padding: 0.5rem 0;
   }
 
   .contact-links {
@@ -773,8 +752,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-
-
   }
   .footer__list-item {
     > a {
@@ -782,7 +759,6 @@ main {
     }
   }
 }
-
 
 @media (max-width: 1024px) {
   .page-header {
@@ -793,10 +769,10 @@ main {
     margin: 0;
   }
   .intro {
-    >h2, p {
+    > h2,
+    p {
       width: auto;
       padding: 1rem;
-      
     }
   }
 
@@ -813,24 +789,34 @@ main {
 
   .list-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
+    gap: 0.5rem;
     margin: 0;
   }
 
-    .header__cta {
+  .header__cta {
     flex-direction: row;
 
     .cta__content {
-      
-      padding: 2rem .8rem;
+      padding: 2rem 0.8rem;
+      margin: 0;
+      justify-content: space-evenly;
 
       .cta__text-section {
-        text-align: center;
-        width: 100%;
+        
+        width: min-content;
         justify-content: center;
-        align-items: center;
+        
       }
     }
+  }
+
+  .cta__content--2 {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .cta__icon-div {
+    padding: 1.5rem;
   }
 }
 
@@ -844,11 +830,12 @@ main {
   }
 
   .intro {
-   width: 100%;
+    width: 100%;
 
-   >h2, p {
-    padding: 1rem .3rem;
-   }
+    > h2,
+    p {
+      padding: 1rem 0.3rem;
+    }
   }
 
   .intro__gallery {
@@ -856,7 +843,7 @@ main {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "i1 i2"
-      "i3 i4" 
+      "i3 i4"
       "i5 i6";
     height: auto;
     aspect-ratio: 2 / 3;
@@ -868,22 +855,35 @@ main {
 
     .cta__content {
       flex-direction: column-reverse;
-      padding: .8rem;
+      padding: 0.8rem;
+
+      .cta__icon-div {
+        max-width: 20rem;
+        max-height: 20rem;
+
+        > img {
+          padding: 20%;
+        }
+      }
 
       .cta__text-section {
         text-align: center;
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin: 0;
+
+        > h2 {
+          margin: 1rem 0;
+        }
       }
     }
   }
 
   .banner__cta--2 {
-    
     .cta__content--2 {
       flex-direction: column-reverse;
-      padding: .8rem;
+      padding: 0.8rem;
     }
 
     .cta__text-section--2 {
@@ -891,7 +891,6 @@ main {
       width: 100%;
       justify-content: center;
       align-items: center;
-    
     }
 
     .cta__btn--2 {
@@ -904,9 +903,7 @@ main {
     grid-template-columns: repeat(1, 1fr);
 
     .list__card {
-      margin-bottom: .5rem;
-
-
+      margin-bottom: 0.5rem;
 
       .card__p {
         height: auto;
